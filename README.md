@@ -43,3 +43,16 @@ Camcorder ==> SVideo to HDMI ==> HDMI to USB ==> Computer
 
    Note: `-crf 28` controls the quality. The default is `23`. Lower values result in
    better quality, but larger file sizes.
+
+# Troubleshooting
+
+1. Why is my webcam being recorded?
+
+   The `-i /dev/video0` option controls the video device to record. Unplug your webcam, or try another video stream
+   such as `-i /dev/video1`.
+
+2. Why is the video quality poor?
+
+   Hi8 is low quality by today's standards. This process is primarily intended as a cheap
+   and easy way to get old home videos into a digital format. There are likely solutions
+   that produce higher quality results.
